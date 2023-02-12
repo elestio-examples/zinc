@@ -7,7 +7,7 @@ services:
             - './data:/data'
         environment:
             - ZINC_DATA_PATH=/data
-            - ZINC_FIRST_ADMIN_USER=admin
-            - 'ZINC_FIRST_ADMIN_PASSWORD=Complexpass#123'
+            - ZINC_FIRST_ADMIN_USER=${ADMIN_EMAIL}
+            - 'ZINC_FIRST_ADMIN_PASSWORD=${ADMIN_PASSWORD}'
         ports:
             - '172.17.0.1:4080:4080'
