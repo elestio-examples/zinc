@@ -6,7 +6,7 @@ services:
         volumes:
             - './data:/data'
         environment:
-            - ZINC_DATA_PATH=./data
+            - ZINC_DATA_PATH=/data
             - ZINC_FIRST_ADMIN_USER=admin
             - 'ZINC_FIRST_ADMIN_PASSWORD=Complexpass#123'
         ports:
