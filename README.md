@@ -13,7 +13,7 @@ Deploy Zinc server with CI/CD on Elestio
 You can can open Zinc UI here:
 
     URL: https://[CI_CD_DOMAIN]
-    email:[ADMIN_EMAIL]
+    login:[ADMIN_EMAIL]
     password: [ADMIN_PASSWORD]
 
 # Documentation
