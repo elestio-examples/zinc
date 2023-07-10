@@ -3,6 +3,7 @@ services:
     zinclabs:
         image: 'elestio4test/zinc:${SOFTWARE_VERSION_TAG}'
         restart: always
+        user: root:root
         volumes:
             - './data:/data'
         environment:
