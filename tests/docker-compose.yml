@@ -1,14 +1,14 @@
-version: '3.3'
+version: "3.3"
 services:
-    zinclabs:
-        image: 'elestio4test/zinc:${SOFTWARE_VERSION_TAG}'
-        restart: always
-        user: root:root
-        volumes:
-            - './data:/data'
-        environment:
-            - ZINC_DATA_PATH=/data
-            - ZINC_FIRST_ADMIN_USER=${ADMIN_EMAIL}
-            - 'ZINC_FIRST_ADMIN_PASSWORD=${ADMIN_PASSWORD}'
-        ports:
-            - '172.17.0.1:4080:4080'
+  zinclabs:
+    image: "elestio4test/zinc:${SOFTWARE_VERSION_TAG}"
+    restart: always
+    user: root:root
+    volumes:
+      - "./data:/data"
+    environment:
+      - ZINC_DATA_PATH=/data
+      - ZINC_FIRST_ADMIN_USER=${ADMIN_EMAIL}
+      - "ZINC_FIRST_ADMIN_PASSWORD=${ADMIN_PASSWORD}"
+    ports:
+      - "172.17.0.1:4080:4080"

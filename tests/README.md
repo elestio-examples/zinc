@@ -65,6 +65,14 @@ Here are some example snippets to help you get started creating a container.
             ports:
                 - '172.17.0.1:4080:4080'
 
+### Environment variables
+
+|       Variable       | Value (example) |
+| :------------------: | :-------------: |
+| SOFTWARE_VERSION_TAG |     latest      |
+|    ADMIN_PASSWORD    |  your-password  |
+|     ADMIN_EMAIL      | your@email.com  |
+
 # Maintenance
 
 ## Logging
@@ -101,6 +109,5 @@ That's it! With these simple steps, you can easily backup and restore your data 
 # Links
 
 - <a target="_blank" href="https://github.com/zincsearch/zincsearch">Zinc Github repository</a>
-
 
 - <a target="_blank" href="https://github.com/elestio-examples/zinc">Elestio/zinc Github repository</a>
