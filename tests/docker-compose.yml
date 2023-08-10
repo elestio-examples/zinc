@@ -7,7 +7,7 @@ services:
     volumes:
       - "./data:/data"
     environment:
-      - ZINC_DATA_PATH=/data
+      - ZINC_DATA_PATH=${ZINC_DATA_PATH}
       - ZINC_FIRST_ADMIN_USER=${ADMIN_EMAIL}
       - "ZINC_FIRST_ADMIN_PASSWORD=${ADMIN_PASSWORD}"
     ports:

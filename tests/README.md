@@ -59,7 +59,7 @@ Here are some example snippets to help you get started creating a container.
             volumes:
                 - './data:/data'
             environment:
-                - ZINC_DATA_PATH=/data
+                - ZINC_DATA_PATH=${ZINC_DATA_PATH}
                 - ZINC_FIRST_ADMIN_USER=${ADMIN_EMAIL}
                 - 'ZINC_FIRST_ADMIN_PASSWORD=${ADMIN_PASSWORD}'
             ports:
@@ -72,6 +72,7 @@ Here are some example snippets to help you get started creating a container.
 | SOFTWARE_VERSION_TAG |     latest      |
 |    ADMIN_PASSWORD    |  your-password  |
 |     ADMIN_EMAIL      | your@email.com  |
+|    ZINC_DATA_PATH    |      /path      |
 
 # Maintenance
 
